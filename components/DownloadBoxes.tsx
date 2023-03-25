@@ -33,9 +33,9 @@ export default function DownloadBoxes() {
 				{downloadBoxesList.map((el, i) => (
 					<div
 						key={el.id}
-						className={`flex flex-col w-full py-6 space-y-4 text-center bg-white rounded-lg shadow-lg md:w-1/3 ${
-							'md:mt-' + 8 * i
-						}`}
+						className={`flex flex-col w-full py-6 space-y-4 text-center bg-white rounded-lg shadow-lg md:w-1/3`}
+						// TODO: fix inline styles
+						style={{ marginTop: `${2 * i + 'rem'}` }}
 					>
 						<div className='flex justify-center'>
 							<img src={el.img} alt={el.title} />

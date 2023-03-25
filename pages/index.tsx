@@ -6,6 +6,10 @@ import Features from '@/components/Features';
 import Tabs from '@/components/Tabs';
 import Download from '@/components/Download';
 import DownloadBoxes from '@/components/DownloadBoxes';
+import FAQHeader from '@/components/FAQHeader';
+import FAQ from '@/components/FAQ';
+import Newsletter from '@/components/Newsletter';
+import Footer from '@/components/Footer';
 
 const rubik = Rubik({
 	subsets: ['latin'],
@@ -24,6 +28,10 @@ export default function Home() {
 				<Tabs />
 				<Download />
 				<DownloadBoxes />
+				<FAQHeader />
+				<FAQ />
+				<Newsletter />
+				<Footer />
 			</main>
 		</>
 	);
