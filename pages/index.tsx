@@ -2,6 +2,10 @@ import Head from 'next/head';
 import { Rubik } from 'next/font/google';
 
 import Hero from '@/components/Hero';
+import Features from '@/components/Features';
+import Tabs from '@/components/Tabs';
+import Download from '@/components/Download';
+import DownloadBoxes from '@/components/DownloadBoxes';
 
 const rubik = Rubik({
 	subsets: ['latin'],
@@ -16,6 +20,10 @@ export default function Home() {
 			</Head>
 			<main className={rubik.className}>
 				<Hero />
+				<Features />
+				<Tabs />
+				<Download />
+				<DownloadBoxes />
 			</main>
 		</>
 	);
